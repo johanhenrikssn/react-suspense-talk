@@ -4,31 +4,27 @@ import OfficeDetails from "./components/CityPage";
 
 export default class Home extends Component {
   state = {
-    selectedOfficeId: null,
-    showDetail: false
+    selectedId: null
   };
 
   handleShowDetails = id => {
-    this.setState({ selectedOfficeId: id, showDetail: true });
+    this.setState({ selectedId: id });
   };
 
   handleBackClick = () => {
-    this.setState({ selectedOfficeId: null, showDetail: false });
+    this.setState({ selectedId: null });
   };
 
   render() {
-    const { showDetail, selectedOfficeId } = this.state;
+    const { selectedId } = this.state;
 
     return (
       <div>
         <h1>Cities</h1>
-        {!showDetail ? (
+        {!selectedId ? (
           <CitiesList handleShowDetails={this.handleShowDetails} />
         ) : (
-          <OfficeDetails
-            handleBack={this.handleBackClick}
-            id={selectedOfficeId}
-          />
+          <OfficeDetails handleBack={this.handleBackClick} id={selectedId} />
         )}
       </div>
     );
