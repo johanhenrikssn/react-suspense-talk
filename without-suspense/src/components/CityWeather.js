@@ -22,8 +22,8 @@ export default class CityWeather extends React.Component {
     }
     return (
       <>
-        <h3>Weather</h3>
-        <div>{data.temperature}</div>
+        <h3>Current temperature</h3>
+        <div>{data.temperature}°</div>
       </>
     );
   }

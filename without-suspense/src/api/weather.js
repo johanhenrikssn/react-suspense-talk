@@ -1,37 +1,37 @@
 export default [
   {
-    id: 1,
+    id: 0,
     text: "Stockholm",
+    temperature: "8"
+  },
+  {
+    id: 1,
+    text: "Hamburg",
     temperature: "10"
   },
   {
     id: 2,
-    text: "Hamburg",
-    temperature: "15"
+    text: "Berlin",
+    temperature: "9"
   },
   {
     id: 3,
-    text: "Berlin",
-    temperature: "17"
+    text: "Copenhagen",
+    temperature: "9"
   },
   {
     id: 4,
-    text: "Copenhagen",
-    temperature: "11"
+    text: "Oslo",
+    temperature: "6"
   },
   {
     id: 5,
-    text: "Oslo",
+    text: "Helsinki",
     temperature: "7"
   },
   {
     id: 6,
-    text: "Helsinki",
-    temperature: "8"
-  },
-  {
-    id: 7,
     text: "Zürich",
-    temperature: "20"
+    temperature: "9"
   }
 ];

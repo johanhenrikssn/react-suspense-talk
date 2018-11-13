@@ -1,30 +1,33 @@
 import React, { Component } from "react";
+import "./App.css";
 import CitiesList from "./components/List";
-import OfficeDetails from "./components/CityPage";
+import CityPage from "./components/CityPage";
 
 export default class Home extends Component {
   state = {
-    selectedId: null
+    selectedId: null,
+    showDetails: false
   };
 
   handleShowDetails = id => {
-    this.setState({ selectedId: id });
+    console.log({ id });
+    this.setState({ selectedId: id, showDetails: true });
   };
 
-  handleBackClick = () => {
-    this.setState({ selectedId: null });
+  handleBack = () => {
+    this.setState({ selectedId: null, showDetails: false });
   };
 
   render() {
-    const { selectedId } = this.state;
+    const { selectedId, showDetails } = this.state;
 
     return (
-      <div>
+      <div className={"App"}>
         <h1>Cities</h1>
-        {!selectedId ? (
-          <CitiesList handleShowDetails={this.handleShowDetails} />
+        {showDetails ? (
+          <CityPage handleBack={this.handleBack} id={selectedId} />
         ) : (
-          <OfficeDetails handleBack={this.handleBackClick} id={selectedId} />
+          <CitiesList handleShowDetails={this.handleShowDetails} />
         )}
       </div>
     );

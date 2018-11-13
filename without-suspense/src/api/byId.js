@@ -1,37 +1,37 @@
 export default [
   {
-    id: 1,
+    id: 0,
     text: "Stockholm",
-    population: "1000"
+    population: "789 024"
+  },
+  {
+    id: 1,
+    text: "Hamburg",
+    population: "1 810 000"
   },
   {
     id: 2,
-    text: "Hamburg",
-    population: "1000"
+    text: "Berlin",
+    population: "3 575 000"
   },
   {
     id: 3,
-    text: "Berlin",
-    population: "1000"
+    text: "Copenhagen",
+    population: "602 481"
   },
   {
     id: 4,
-    text: "Copenhagen",
-    population: "1000"
+    text: "Oslo",
+    population: "634 293"
   },
   {
     id: 5,
-    text: "Oslo",
-    population: "1000"
+    text: "Helsinki",
+    population: "631 695"
   },
   {
     id: 6,
-    text: "Helsinki",
-    population: "1000"
-  },
-  {
-    id: 7,
     text: "Zürich",
-    population: "1000"
+    population: "402 762"
   }
 ];

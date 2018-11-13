@@ -1,37 +1,37 @@
 export default [
   {
-    id: 1,
+    id: 0,
     text: "Stockholm",
-    recommendations: "Djurgården"
+    recommendations: "Artipelag"
+  },
+  {
+    id: 1,
+    text: "Hamburg",
+    recommendations: "Alster by canoe"
   },
   {
     id: 2,
-    text: "Hamburg",
-    recommendations: "Briges"
+    text: "Berlin",
+    recommendations: "Berghein"
   },
   {
     id: 3,
-    text: "Berlin",
-    recommendations: "KaDeWe"
+    text: "Copenhagen",
+    recommendations: "Noma"
   },
   {
     id: 4,
-    text: "Copenhagen",
-    recommendations: "Nobu"
+    text: "Oslo",
+    recommendations: "Concert Hall"
   },
   {
     id: 5,
-    text: "Oslo",
-    recommendations: "Gardemoen"
+    text: "Helsinki",
+    recommendations: "Allas Sea Pool"
   },
   {
     id: 6,
-    text: "Helsinki",
-    recommendations: "Sauna"
-  },
-  {
-    id: 7,
     text: "Zürich",
-    recommendations: "Skiing"
+    recommendations: "Uetliberg Mountain"
   }
 ];

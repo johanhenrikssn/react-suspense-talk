@@ -9,8 +9,8 @@ const getCityWeather = id => weatherByCity[id];
 const getCityRecommendations = id => recommendationsByCity[id];
 
 function getRandomResponseTime() {
-  const MIN = 500;
-  const MAX = 3000;
+  const MIN = 1000;
+  const MAX = 4000;
   return Math.random() * (MAX - MIN) + MIN;
 }
 
@@ -18,7 +18,7 @@ export const getCityListAPI = () => {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(getCityList());
-    }, getRandomResponseTime());
+    }, 900);
   });
 };
 

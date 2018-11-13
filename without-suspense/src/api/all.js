@@ -1,30 +1,30 @@
 export default [
   {
-    id: 1,
+    id: 0,
     text: "Stockholm"
   },
   {
-    id: 2,
+    id: 1,
     text: "Hamburg"
   },
   {
-    id: 3,
+    id: 2,
     text: "Berlin"
   },
   {
-    id: 4,
+    id: 3,
     text: "Copenhagen"
   },
   {
-    id: 5,
+    id: 4,
     text: "Oslo"
   },
   {
-    id: 6,
+    id: 5,
     text: "Helsinki"
   },
   {
-    id: 7,
+    id: 6,
     text: "Zürich"
   }
 ];

@@ -24,7 +24,7 @@ export default class CityInfo extends React.Component {
       <>
         <h2>{data.text}</h2>
         <h3>Info</h3>
-        <i>population: {data.population}</i>
+        <i>Population: {data.population}</i>
       </>
     );
   }
