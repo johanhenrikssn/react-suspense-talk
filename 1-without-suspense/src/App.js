@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import CitiesList from "./components/List";
 import CityPage from "./components/CityPage";
+// const CitiesList = lazy(() => import("./components/List"));
+// const CityPage = lazy(() => import("./components/CityPage"));
 
 export default class Home extends Component {
   state = {
