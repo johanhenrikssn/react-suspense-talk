@@ -10,7 +10,6 @@ export default class Home extends Component {
   };
 
   handleShowDetails = id => {
-    console.log({ id });
     this.setState({ selectedId: id, showDetails: true });
   };
 
