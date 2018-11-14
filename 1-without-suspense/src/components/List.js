@@ -28,23 +28,3 @@ export default class List extends React.Component {
     ));
   }
 }
-
-// import React from "react";
-// import { unstable_createResource as createResource } from "react-cache";
-// import { getCityListAPI } from "../api/api";
-// import Spinner from "./Spinner";
-
-// const CitiesAPI = createResource(getCityListAPI);
-
-// export default function CityList({ handleShowDetails }) {
-//   const data = CitiesAPI.read();
-
-//   if (data === null) {
-//     return <Spinner />;
-//   }
-//   return data.map(city => (
-//     <div key={city.id} onClick={() => handleShowDetails(city.id)}>
-//       {city.text}
-//     </div>
-//   ));
-// }
